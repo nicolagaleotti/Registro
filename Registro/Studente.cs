@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Registro
 {
-    class Studente
+    public class Studente
     {
         private string nome;
         private string cognome;

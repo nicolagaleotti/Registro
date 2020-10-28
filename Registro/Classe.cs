@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Registro
 {
-    class Classe
+    public class Classe
     {
         private int anno;
         private string sezione;
@@ -21,7 +21,7 @@ namespace Registro
             return anno.ToString() + sezione;
         }
 
-        public List<Studente> GetStudenti ()
+        public List<Studente> GetStudenti()
         {
             return studenti;
         }

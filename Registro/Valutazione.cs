@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Registro
 {
-    class Valutazione
+    public class Valutazione
     {
         private double voto;
         private DateTime data;

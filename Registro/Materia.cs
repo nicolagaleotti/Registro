@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Registro
 {
-    class Materia
+    public class Materia
     {
         private string nome;
 
