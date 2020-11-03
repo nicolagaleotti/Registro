@@ -58,5 +58,21 @@ namespace Registro
             }
             return classi[indice].TrovaVotoMassimo();
         }
+
+        public Valutazione TrovaVotoMinimo()
+        {
+            double min = 11;
+            int indice = 0;
+            for (int i = 0; i < classi.Count; i++)
+            {
+                Valutazione voto = classi[i].TrovaVotoMassimo();
+                if (voto.GetVotoDouble() < min)
+                {
+                    min = voto.GetVotoDouble();
+                    indice = i;
+                }
+            }
+            return classi[indice].TrovaVotoMinimo();
+        }
     }
 }
