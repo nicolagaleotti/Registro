@@ -66,7 +66,7 @@ namespace Registro
             double min = 11;
             for (int i = 0; i < voti.Count; i++)
             {
-                if (voti[i].GetVotoDouble() <min)
+                if (voti[i].GetVotoDouble() < min)
                     indice = i;
             }
             return voti[indice].GetVoto();
