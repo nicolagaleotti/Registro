@@ -28,6 +28,11 @@ namespace Registro
             return cognome;
         }
 
+        public string GetNomeCompleto()
+        {
+            return (nome + " " + cognome);
+        }
+
         public DateTime GetDataDiNascita()
         {
             return dataDiNascita;
