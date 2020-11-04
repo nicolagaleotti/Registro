@@ -71,5 +71,16 @@ namespace Registro
             }
             return voti[indice].GetVoto();
         }
+
+        public Valutazione TrovaVotoPiuRecente()
+        {
+            Valutazione recente = voti[0].GetVoto();
+            foreach(Valutazione v in voti)
+            {
+                if (v.GetData() > recente.GetData())
+                    recente = v.GetVoto();
+            }
+            return recente;
+        }
     }
 }

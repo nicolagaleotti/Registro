@@ -17,7 +17,9 @@ namespace Prova
             Valutazione voto1 = new Valutazione(8, studente1, materia1);
             Valutazione voto2 = new Valutazione(7, studente2, materia1);
             Valutazione votomax = scuola.TrovaVotoMassimo();
+            Valutazione votomin = scuola.TrovaVotoMinimo();
             Console.WriteLine($"Il voto massimo della scuola {scuola.GetNome()} è {votomax.GetVotoDouble()}.");
+            Console.WriteLine($"Il voto minimo della scuola {scuola.GetNome()} è {votomin.GetVotoDouble()}.");
         }
     }
 }
