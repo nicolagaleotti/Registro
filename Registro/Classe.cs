@@ -9,6 +9,7 @@ namespace Registro
         private int anno;
         private string sezione;
         List<Studente> studenti = new List<Studente>();
+        List<Docente> docenti = new List<Docente>();
 
         public Classe(int anno, string sezione)
         {
@@ -29,6 +30,16 @@ namespace Registro
         public void AddStudente(Studente studente)
         {
             studenti.Add(studente);
+        }
+
+        public void AddDocente(Docente docente)
+        {
+            docenti.Add(docente);
+        }
+
+        public List<Docente> GetDocenti()
+        {
+            return docenti;
         }
 
         public Valutazione TrovaVotoMassimo()

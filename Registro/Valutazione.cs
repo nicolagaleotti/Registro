@@ -8,23 +8,16 @@ namespace Registro
     {
         private double voto;
         private DateTime data;
-        private Materia materia;
 
-        public Valutazione(double voto, Studente studente, Materia materia)
+        public Valutazione(double voto, Studente studente, Docente docente)
         {
             this.voto = voto;
-            studente.AddVoto(this);
-            this.materia = materia;
+            docente.AssegnaVoto(studente, this);
         }
 
         public Valutazione GetVoto()
         {
             return this;
-        }
-
-        public Materia GetMateria()
-        {
-            return materia;
         }
 
         public DateTime GetData()
